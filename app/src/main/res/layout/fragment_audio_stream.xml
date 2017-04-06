@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:gravity="center"
+    android:orientation="vertical"
+   >
+
+    <com.gigamole.library.PulseView
+        android:id="@+id/pv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="24dp"
+        app:pv_alpha="50"
+        app:pv_color="@android:color/white"
+        app:pv_count="3"
+        app:pv_icon="@drawable/ic_marker"
+        app:pv_icon_height="161dp"
+        app:pv_icon_width="167dp"
+        app:pv_interpolator="@android:anim/linear_interpolator"
+        app:pv_measure="height"
+        app:pv_spawn_period="1500" />
+
+    <TextView
+        android:id="@+id/audioStreamAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="false"
+        android:layout_marginBottom="30dp"
+        android:ellipsize="marquee"
+        android:maxLines="1"
+        android:text="3 Boulevard Gambetta"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+</RelativeLayout>
